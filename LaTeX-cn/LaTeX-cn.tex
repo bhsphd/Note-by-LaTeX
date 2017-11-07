@@ -2931,8 +2931,8 @@ Roman & I & II& III \\
 以上代码对应的动态图\footnote{该例由 Python - matplotlib 绘制。可以参考\href{https://wklchris.github.io/Py3-matplotlib.html}{此页面}的附录。}给出如\fref{fig:GIF}所示：
 \begin{figure}[!hbt]
   \centering
-  \animategraphics[controls, autoplay, loop, width=0.6\linewidth]{20}{Py3-matplotlib-}{0}{98}
-  \caption{动态图示例}\label{fig:GIF}
+%  \animategraphics[controls, autoplay, loop, width=0.6\linewidth]{20}{Py3-matplotlib-}{0}{98}
+%  \caption{动态图示例}\label{fig:GIF}
 \end{figure}
 
 以上会搜索文件夹（包括你在 \pkg{graphicx} 中设置的文件夹），找到图片依次序编号的从“Py3-matplotlib-0.png”到“Py3-matplotlib-98.png”的这99张图片，以每秒20帧为默认播放速度加载。参数 \texttt{controls} 表示在图片下方附加控制按钮，可以暂停/播放，正放/倒放，手动浏览帧，以及更改播放速度。参数 \texttt{autoplay} 表示当阅读者浏览到动态图所在页面时，动态图会自动开始播放。参数 \texttt{loop} 表示播放到尾帧后自动重播。最后，你可以像一般图片加载一样，指定它的 \texttt{width/height}。
